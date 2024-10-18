@@ -61,14 +61,14 @@
 
 
 
-    - name: Create destination PVC
+    - name: Create repository PVC
       kubernetes.core.k8s:
         state: present
         definition:
           kind: PersistentVolumeClaim
           apiVersion: v1
           metadata:
-            name: data-dest-pvc
+            name: repository-pvc
             namespace: "{{ namespace }}"
           spec:
             accessModes:
