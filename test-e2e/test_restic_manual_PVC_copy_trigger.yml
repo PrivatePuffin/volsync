@@ -283,7 +283,7 @@
               manual: restore-once
             restic:
               repository: "{{ restic_secret_name }}"
-              repositoryPVC: "data-dest-pvc"
+              repositoryPVC: "repository-pvc"
               destinationPVC: data-dest
               copyMethod: Direct
               cacheCapacity: 1Gi
