@@ -102,7 +102,7 @@
             restic:
               pruneIntervalDays: 1
               repository: "{{ restic_secret_name }}"
-              repositoryPVC: "data-dest-pvc"
+              repositoryPVC: "repository-pvc"
               retain:
                 hourly: 3
                 daily: 2
